@@ -84,6 +84,10 @@ p.danger {
 	color: red;
 }
 /************ Navbar Css ************/
+img.git-icon {
+  fill: white;
+  color: #fff;
+}
 nav.navbar {
   padding: 18px 0;
   position: fixed;

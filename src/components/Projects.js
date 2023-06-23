@@ -21,11 +21,12 @@ export const Projects = () => {
       source:{playStore: 'https://play.google.com/store/apps/details?id=co.com.vai.app', appStore: 'https://play.google.com/store/apps/details?id=co.com.vai.app', gitHub: ''},
     },
     {
-      title: "Sonos",
-      description: "An app for setting up and controlling Sonos' devices",
-      imgUrl: sonos,
-      source:{playStore: 'https://play.google.com/store/apps/details?id=com.sonos.acr2', appStore: 'https://apps.apple.com/us/app/sonos/id1488977981?ls=1', gitHub: ''} ,
+      title: "Counter",
+      description: " A simple flutter app that allows you to increment and decrement a number by clicking on buttons",
+      imgUrl: counter,
+      source:{playStore: '', appStore:'', gitHub:'https://github.com/Isveth/counter'},
     },
+    
     {
       title: "FiloTalk",
       description: "An app meant to be a platform for philosophical discussions and debates, (In stores soon!)",
@@ -39,16 +40,16 @@ export const Projects = () => {
       source:{playStore: '', appStore:'', gitHub:'https://github.com/Isveth/yes_no_app'},
     },
     {
-      title: "Counter",
-      description: " A simple flutter app that allows you to increment and decrement a number by clicking on buttons",
-      imgUrl: counter,
-      source:{playStore: '', appStore:'', gitHub:'https://github.com/Isveth/counter'},
+      title: "Sonos",
+      description: "An app for setting up and controlling Sonos' devices",
+      imgUrl: sonos,
+      source:{playStore: 'https://play.google.com/store/apps/details?id=com.sonos.acr2', appStore: 'https://apps.apple.com/us/app/sonos/id1488977981?ls=1', gitHub: ''} ,
     },
     {
       title: "Portfolio",
       description: "Design & Development",
       imgUrl: portfolio,
-      source:{playStore: '', appStore:'', gitHub:''},
+      source:{playStore: '', appStore:'', gitHub:'https://github.com/Isveth/personal-portfolio/tree/master'},
     },
   ];
 
@@ -61,7 +62,7 @@ export const Projects = () => {
               {({ isVisible }) =>
               <div className={isVisible ? "animate__animated animate__fadeIn": ""}>
                 <h2>Projects</h2>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p> The first tab contains my most recent projects, some of them are already on production (you can download them!!), while others rest in my GitHub, waiting to see the lights of the stores</p>
                 <Tab.Container id="projects-tabs" defaultActiveKey="first">
                   <Nav variant="pills" className="nav-pills mb-5 justify-content-center align-items-center" id="pills-tab">
                     <Nav.Item>
