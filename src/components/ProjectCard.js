@@ -9,10 +9,10 @@ export const ProjectCard = ({ title, description, imgUrl, source }) => {
         <div className="proj-txtx">
           <h4>{title}</h4>
           <span>{description}</span>
-          <Row className="d-flex justify-content-between">
-            {source.gitHub && <GitIcon href = {source.gitHub} target="_blank" rel="noopener noreferrer"/>}
-            {source.appStore && <AppIcon href = {source.appStore} target="_blank" rel="noopener noreferrer"/>}
-            {source.playStore && <PlayIcon href = {source.playStore} target="_blank" rel="noopener noreferrer"/>}
+          <Row className="justify-content-center">
+             {source.gitHub && <Col><GitIcon href = {source.gitHub} target="_blank" rel="noopener noreferrer"/></Col>}
+            {source.appStore && <Col><AppIcon href = {source.appStore} target="_blank" rel="noopener noreferrer"/></Col>}
+            {source.playStore && <Col><PlayIcon href = {source.playStore} target="_blank" rel="noopener noreferrer"/></Col>}
           </Row>
         </div>
       </div>
