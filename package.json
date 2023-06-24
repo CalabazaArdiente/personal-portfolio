@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001",
+  "homepage": "https://Isveth.github.io/personal-portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
@@ -34,7 +35,9 @@
     "start": "set HOST=0.0.0.0&&react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run buil",
+    "deply": "gh-pages -d build -r  https://$GH_TOKEN@github.com/Isveth/personal-portfolio"
   },
   "eslintConfig": {
     "extends": [
@@ -53,5 +56,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
