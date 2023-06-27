@@ -24,7 +24,7 @@
     "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.3.0",
     "react-router-hash-link": "^2.4.3",
-    "react-scripts": "^1.1.5",
+    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
   },
   "engines": {
@@ -36,8 +36,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "predeploy": "npm run buil",
-    "deply": "gh-pages -d build -r  https://$GH_TOKEN@github.com/Isveth/personal-portfolio"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -r  https://$GH_TOKEN@github.com/Isveth/personal-portfolio"
   },
   "eslintConfig": {
     "extends": [
