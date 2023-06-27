@@ -18,7 +18,7 @@ jobs:
           node-version: ${{matrix.node-version}}
       - name: install packages
         run: |
-          npm install
+          npm install || (npm audit fix --force && false)
           npm audit-fix
           npm run build
       - name: registry github user
