@@ -19,7 +19,7 @@ jobs:
       - name: install packages
         run: npm install -g npm@latest
       - name: build app
-        run: npm run build
+        run: npm run predeploy
       - name: registry github user
         run: |
           git config --global user.email isveth.henao@gmail.com
