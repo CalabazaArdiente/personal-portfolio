@@ -2,7 +2,6 @@ import React from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
 import { ProjectCard } from "./ProjectCard";
 import vai from "../assets/img/vai-2.png";
-import picap from "../assets/img/picap.png";
 import sonos from "../assets/img/sonos.png";
 import counter from "../assets/img/counter.png";
 import yesNo from "../assets/img/yesNo.png";

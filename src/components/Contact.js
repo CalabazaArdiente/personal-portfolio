@@ -37,7 +37,7 @@ export const Contact = () => {
     setButtonText("Send");
     let result = await response.json();
     setFormDetails(formInitialDetails);
-    if (result.code == 200) {
+    if (result.code === 200) {
       setStatus({ succes: true, message: "Message sent successfully" });
     } else {
       setStatus({
@@ -61,7 +61,7 @@ export const Contact = () => {
                     isVisible ? "animate__animated animate__zoomIn" : ""
                   }
                   src={contactImg}
-                  alt="Contact Us"
+                  alt="Contact us illustration"
                 />
               )}
             </TrackVisibility>
@@ -124,16 +124,14 @@ export const Contact = () => {
                         />
                       </Col>
                     </Row>
-                    <div className="row">
-                      <textarea
-                        rows="6"
-                        value={formDetails.message}
-                        placeholder="Message"
-                        onChange={(e) =>
-                          onFormUpdate("message", e.target.value)
-                        }
-                      ></textarea>
-                    </div>
+
+                    <textarea
+                      rows="6"
+                      value={formDetails.message}
+                      placeholder="Message"
+                      onChange={(e) => onFormUpdate("message", e.target.value)}
+                    ></textarea>
+
                     <button type="submit">{buttonText}</button>
                     {status.message && (
                       <div className="row">

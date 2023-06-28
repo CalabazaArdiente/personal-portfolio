@@ -52,35 +52,35 @@ export const Skills = () => {
                 className="owl-carousel owl-theme skill-slider"
               >
                 <div className="item">
-                  <img src={flutter} alt="Image" />
+                  <img src={flutter} alt="" />
                   <h5>Flutter</h5>
                 </div>
                 <div className="item">
-                  <img src={react} alt="Image" />
+                  <img src={react} alt="" />
                   <h5>React & React Native</h5>
                 </div>
                 <div className="item">
-                  <img src={django} alt="Image" />
+                  <img src={django} alt="" />
                   <h5>Django</h5>
                 </div>
                 <div className="item">
-                  <img src={angular} alt="Image" />
+                  <img src={angular} alt="" />
                   <h5>Angular</h5>
                 </div>
                 <div className="item">
-                  <img src={c} alt="Image" />
+                  <img src={c} alt="" />
                   <h5>C# & .NET</h5>
                 </div>
                 <div className="item">
-                  <img src={go} alt="Image" />
+                  <img src={go} alt="" />
                   <h5>Golang</h5>
                 </div>
                 <div className="item">
-                  <img src={clojure} alt="Image" />
+                  <img src={clojure} alt="" />
                   <h5>Clojure</h5>
                 </div>
                 <div className="item">
-                  <img src={firebase} alt="Image" />
+                  <img src={firebase} alt="" />
                   <h5>Firebase</h5>
                 </div>
               </Carousel>
@@ -88,7 +88,7 @@ export const Skills = () => {
           </div>
         </div>
       </div>
-      <img className="background-image-left" src={colorSharp} alt="Image" />
+      <img className="background-image-left" src={colorSharp} alt="" />
     </section>
   );
 };
