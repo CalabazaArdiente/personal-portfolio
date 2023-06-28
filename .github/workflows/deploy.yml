@@ -19,11 +19,13 @@ jobs:
       - name: install packages
         run: npm install -g npm@latest
       - name: build app
-        run: npm start
+        run: npm run predeploy
       - name: registry github user
         run: |
           git config --global user.email isveth.henao@gmail.com
           git config --global user.name victoria
+      - name: deploy the app
+        run: npm run deploy
         env:
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
           EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
