@@ -18,7 +18,9 @@ jobs:
           node-version: ${{matrix.node-version}}
       - name: install packages
         run: npm install -g npm@latest
-      - name: Display react-script
+      - name: Install specific version of react-scripts
+        run: npm install react-scripts@5.0.1
+      - name: React-scripts version
         run: npm list react-scripts
       - name: build app
         run: npm run predeploy
