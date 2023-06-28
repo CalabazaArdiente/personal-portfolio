@@ -18,8 +18,8 @@ jobs:
           node-version: ${{matrix.node-version}}
       - name: install packages
         run: npm install -g npm@latest
-      - name: Display Node.js version
-        run: node -v
+      - name: Display react-script
+        run: npm list react-scripts
       - name: build app
         run: npm run predeploy
       - name: registry github user
