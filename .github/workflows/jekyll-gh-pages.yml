@@ -1,0 +1,36 @@
+name: Deploy react app
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    name: deploy app
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        node-version: ["20.x"]
+        npm-version: ["9.x"]
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: ${{matrix.node-version}}
+      - name: install packages
+        run: npm install -g npm@latest
+      - name: Install specific version of react-scripts
+        run: npm install react-scripts@5.0.1
+      - name: React-scripts version
+        run: npm list react-scripts
+      - name: build app
+        run: npm run predeploy
+      - name: registry github user
+        run: |
+          git config --global user.email isveth.henao@gmail.com
+          git config --global user.name victoria
+      - name: deploy the app
+        run: npm run deploy
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          EMAIL_ADDRESS: ${{ secrets.EMAIL_ADDRESS }}
+          EMAIL_PASS: ${{ secrets.EMAIL_PASS }}
